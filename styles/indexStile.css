@@ -11,7 +11,7 @@ body{
     align-items: center;
     background-image: url(../images/background.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 @font-face {
@@ -157,6 +157,22 @@ body{
 
 .square:hover{
     background-color: #181818;
+}
+
+.o{
+    background-image: url(../images/icoMoon.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.x{
+    background-image: url(../images/icoSun.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
 }
 
 .restart{
