@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(../fonts/Bangers-Regular.ttf);
+}
+
+#title{
+    font-family: titleFont;
+    font-size: 150px;
+    text-shadow: 5px 5px 5px black;
+    color: #fff002;
+    margin-top: 80px;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rules{
+    margin-top: 20vh;
+    color: #38b6ff;
+    font-family: bodyFont;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    font-weight: lighter;
+}
+
+.btns{
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    border-bottom: 10px solid black;
+    border-right: 5px solid black;
+    background-color: goldenrod;
+    font-size: 30px;
+    font-family: bodyFont;
+    transition: all .5s;
+}
+
+.btns:hover{
+    height: 110px;
+    width: 310px;
+    color: red;
+}
+
+@keyframes btPulse{
+    50%{
+        text-shadow: 1px 1px 1px black;
+        color: gray;
+    }
+    100%{
+        text-shadow: 1px 1px 1px black;
+        color: white;
+    }
+}
+#btStart{
+    margin-top: 10vh;
+    animation-name: btPulse;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+}
+
+.placeArea{
+    background-color: rgba(0, 0, 0,.6);
+    border-radius: 25px;
+    border: 1px solid gray;
+    border-bottom: 10px solid black;
+    border-right: 5px solid black;
+}
+
+#score{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    height: 200px;
+    width: 600px;
+}
+
+.container{
+    margin-top: 50px;
+    height: 600px;
+    width: 600px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transition: all .5s;
+}
+
+.square:hover{
+    background-color: #181818;
+}
+
+.restart{
+    margin: 25px auto;
+    display: none;
+}
+
