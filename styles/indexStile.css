@@ -10,7 +10,8 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url(../images/background.jpg);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 @font-face {
@@ -100,6 +101,31 @@ body{
     margin-top: 80px;
     height: 200px;
     width: 600px;
+}
+
+.actualScore{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gold;
+    font-size: 40px;
+    font-family: bodyFont;
+    width: 50%;
+    height: 100%;
+}
+
+.ico{
+    width: 25%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left{
+    background-image: url(../images/moon.png);
+}
+
+.right{
+    background-image: url(../images/sun.png);
 }
 
 .container{
